@@ -26,20 +26,10 @@ for (var i=0; i <pets.length; i++){
 // Question 2 
 // Create a function with one argument. done
 
-function loggIn (name){
-    var loggIn = name;
-    console.log (name)
-    
-    if (name) {
-        return true; 
-    }
-    else {
-        return "Please pass a boolean value in";
-    } 
-
-    
+function loggIn (word){
+    console.log (word)
 }
-    loggIn (""); 
+ loggIn("name");
 
 // Inside the function check the type of the value being passed in.
 
@@ -50,20 +40,18 @@ function loggIn (name){
 // Call the function and pass a value in.
 
 
-// Question 3 Write code that does the following: When the button in the HTML is clicked, change the colour of the h2 element to “blue” and change it to read “Updated subheading”        
+// Question 3       
 
-/*button.onclick = function changecolour (){}
-function changecolour (colour){
-    document.button.style.colour = colour; 
-    changeTitle ("blue");
-}*/
-var button = document.querySelector ("button")
-button.onclick = function changeTitle(){
-    var button = document.querySelector ("h2");
-    button.innerHTML = "Updated subheading";
+var heading = document.querySelector ("h2"); 
+var button = document.querySelector ("button");
 
-}
 
+function changeheading (){
+    heading.innerHTML = "Updated subheading";
+    heading.style.color = "blue";
+  }
+   button.onclick = changeheading;
+  
     
 
 

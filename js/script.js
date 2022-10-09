@@ -52,13 +52,21 @@ function loggIn (name){
 
 // Question 3 Write code that does the following: When the button in the HTML is clicked, change the colour of the h2 element to “blue” and change it to read “Updated subheading”        
 
+/*button.onclick = function changecolour (){}
+function changecolour (colour){
+    document.button.style.colour = colour; 
+    changeTitle ("blue");
+}*/
 var button = document.querySelector ("button")
-button.onclick = function (){
-    document.h2 = "Updated subheading"
-   
+button.onclick = function changeTitle(){
+    var button = document.querySelector ("h2");
+    button.innerHTML = "Updated subheading";
+
 }
 
+    
 
 
-var h2 = document.querySelector ("h2")
+
+
 

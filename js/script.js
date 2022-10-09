@@ -24,21 +24,16 @@ for (var i=0; i <pets.length; i++){
 }
 
 // Question 2 
-// Create a function with one argument. done
 
-function loggIn (word){
-    console.log (word)
+function loggIn (number){
+  if (number){
+    console.log (number)
+  } else { 
+    console.log ("Please pass a boolean value in")
+  }
 }
- loggIn("name");
 
-// Inside the function check the type of the value being passed in.
-
-// If it is a boolean value, log the value.
-
-// If it is not a boolean value, log the message “Please pass a boolean value in”.
-
-// Call the function and pass a value in.
-
+loggIn (0)
 
 // Question 3       
 
